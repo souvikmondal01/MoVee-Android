@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_700"
+    android:orientation="vertical"
+    tools:context=".SingleMovieDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_single_movie_poster"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_single_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_back_arrow_single_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".0" />
+
+        <TextView
+            android:id="@+id/tv_single_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/movie"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_single_movie_poster" />
+
+        <TextView
+            android:id="@+id/tv_release_date_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/not_white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_single_movie_title"
+            tools:text="2020" />
+
+        <TextView
+            android:id="@+id/tv_dot_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="•"
+            android:textColor="@color/not_white"
+            app:layout_constraintStart_toEndOf="@id/tv_release_date_single"
+            app:layout_constraintTop_toBottomOf="@id/tv_single_movie_title" />
+
+        <TextView
+            android:id="@+id/tv_rating_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/not_white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tv_dot_single"
+            app:layout_constraintTop_toBottomOf="@id/tv_single_movie_title"
+            tools:text="8" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/tv_overview_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/not_white"
+            android:textSize="14sp"
+            app:colorClickableText="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/iv_download"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dot_single"
+            app:showTrimExpandedText="true"
+            app:trimLines="3"
+            app:trimMode="trimModeLine"
+            tools:text="overview......" />
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:alpha=".5"
+            android:src="@drawable/ic_download"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_single" />
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:alpha=".5"
+            android:src="@drawable/facebooklogo"
+            app:layout_constraintStart_toEndOf="@id/iv_download"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_single" />
+
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:alpha=".5"
+            android:src="@drawable/instagramlogo"
+            app:layout_constraintStart_toEndOf="@id/iv_facebook"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_single" />
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:alpha=".5"
+            android:src="@drawable/twitterlogo"
+            app:layout_constraintStart_toEndOf="@id/iv_instagram"
+            app:layout_constraintTop_toBottomOf="@id/tv_overview_single" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

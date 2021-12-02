@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MoVee</string>
+    <string name="more">MORE</string>
+    <string name="movie">movie</string>
+    <string name="movie_info">Movie Info</string>
+    <string name="release_date">Release Date: </string>
+    <string name="rating">Rating: </string>
+    <string name="runtime">Runtime:</string>
+    <string name="budget">Budget:</string>
+    <string name="revenue">Revenue:</string>
+    <string name="overview">Overview</string>
+    <string name="movee">MoVee</string>
+    <string name="trending_movies">Trending Movies</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="now_playing_movies">Now Playing Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="back_arrow">Back Arrow</string>
+</resources>
