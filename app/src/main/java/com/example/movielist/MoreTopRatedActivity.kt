@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_more_top_rated.*
-import kotlinx.android.synthetic.main.activity_now_playing_activitty.*
 
 class MoreTopRatedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
