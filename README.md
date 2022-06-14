@@ -19,7 +19,6 @@
 <img src="images/ss3.jpg" height="400" width="200" hspace="40"><img src="images/ss4.jpg" height="400" width="200" hspace="40">
 
 ## Demonstration
-
 <img src="images/gif.gif" height="400" width="200" hspace="40">
 
 
