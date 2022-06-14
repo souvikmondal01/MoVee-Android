@@ -31,7 +31,7 @@ class SingleMovieDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_movie_details)
-
+        window.statusBarColor = ContextCompat.getColor(this, R.color.grey_700)
         iv_back_arrow_single_movie.setOnClickListener { finish() }
 
         iv_facebook.setOnClickListener {
