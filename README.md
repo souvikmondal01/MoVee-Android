@@ -10,6 +10,7 @@
 * [Material Components for Android] - Modular and customizable Material Design UI components for Android.
 * [Android-Image-Slider] - An amazing image slider for the Android.
 * [ReadMoreTextView] - A Custom TextView with trim text.
+* [TheMovieDB API]- provides a fast, consistent and reliable way to get third party data.
 ## App Icon 📱
 <img src="images/logo.png" width="80px" hspace="40">
 
@@ -32,3 +33,4 @@
 [Material Components for Android]: https://github.com/material-components/material-components-android
 [Android-Image-Slider]: https://github.com/smarteist/Android-Image-Slider
 [ReadMoreTextView]: https://github.com/bravoborja/ReadMoreTextView
+[TheMovieDB API]: https://www.themoviedb.org/documentation/api
