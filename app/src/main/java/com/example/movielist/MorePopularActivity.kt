@@ -38,3 +38,4 @@ class MorePopularActivity : AppCompatActivity() {
         })
     }
 }
+//
