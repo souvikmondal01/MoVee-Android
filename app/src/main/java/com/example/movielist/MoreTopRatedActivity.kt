@@ -2,6 +2,7 @@ package com.example.movielist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +12,7 @@ class MoreTopRatedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_more_top_rated)
-
+        window.statusBarColor = ContextCompat.getColor(this, R.color.grey_700)
         iv_back_arrow_more_top_rated.setOnClickListener { finish() }
 
         val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)

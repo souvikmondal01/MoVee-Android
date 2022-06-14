@@ -1,7 +1,10 @@
 package com.example.movielist
 
+import android.annotation.SuppressLint
 import android.content.Context
 import androidx.lifecycle.ViewModel
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType
+import com.smarteist.autoimageslider.SliderAnimations
 import com.smarteist.autoimageslider.SliderView
 import retrofit2.Call
 import retrofit2.Callback
@@ -35,6 +38,7 @@ class MainActivityViewModel : ViewModel() {
     fun getTrendingMovies() {
         val movie: Call<Movies> = MovieService.movieInstance.getTrendingMovies(pageNum)
         movie.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val tm = response.body()
                 if (tm != null) {
@@ -51,6 +55,7 @@ class MainActivityViewModel : ViewModel() {
     fun getPopularMovies() {
         val popularMovie: Call<Movies> = MovieService.movieInstance.getPopularMovies(pageNum)
         popularMovie.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val pm = response.body()
                 if (pm != null) {
@@ -68,6 +73,7 @@ class MainActivityViewModel : ViewModel() {
     fun getNowPlayingMovies() {
         val nowPlayingMovie: Call<Movies> = MovieService.movieInstance.getNowPlayingMovies(pageNum)
         nowPlayingMovie.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val npm = response.body()
                 if (npm != null) {
@@ -75,6 +81,7 @@ class MainActivityViewModel : ViewModel() {
                     adapter3.notifyDataSetChanged()
                 }
             }
+
             override fun onFailure(call: Call<Movies>, t: Throwable) {
             }
         })
@@ -83,6 +90,7 @@ class MainActivityViewModel : ViewModel() {
     fun getTopRatedMovies() {
         val topRatedMovie: Call<Movies> = MovieService.movieInstance.getTopRatedMovies(pageNum)
         topRatedMovie.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val trm = response.body()
                 if (trm != null) {
@@ -100,6 +108,7 @@ class MainActivityViewModel : ViewModel() {
     fun getTrendingMoviesMore() {
         val movieM: Call<Movies> = MovieService.movieInstance.getTrendingMovies(pageNum)
         movieM.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val tmm = response.body()
                 if (tmm != null) {
@@ -116,6 +125,7 @@ class MainActivityViewModel : ViewModel() {
     fun getPopularMoviesMore() {
         val popularMovieMore: Call<Movies> = MovieService.movieInstance.getPopularMovies(pageNum)
         popularMovieMore.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val pmm = response.body()
                 if (pmm != null) {
@@ -133,6 +143,7 @@ class MainActivityViewModel : ViewModel() {
     fun getNowPlayingMoviesMore() {
         val nowPlayingMovie: Call<Movies> = MovieService.movieInstance.getNowPlayingMovies(pageNum)
         nowPlayingMovie.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val npm = response.body()
                 if (npm != null) {
@@ -149,6 +160,7 @@ class MainActivityViewModel : ViewModel() {
     fun getTopRatedMoviesMore() {
         val topRatedMovies: Call<Movies> = MovieService.movieInstance.getTopRatedMovies(pageNum)
         topRatedMovies.enqueue(object : Callback<Movies> {
+            @SuppressLint("NotifyDataSetChanged")
             override fun onResponse(call: Call<Movies>, response: Response<Movies>) {
                 val trm = response.body()
                 if (trm != null) {
@@ -162,11 +174,14 @@ class MainActivityViewModel : ViewModel() {
         })
     }
 
-    fun setImageInSlider(images: ArrayList<String>, imageSlider: SliderView,context: Context) {
+    fun setImageInSlider(images: ArrayList<String>, imageSlider: SliderView, context: Context) {
         val adapter = MySliderImageAdapter(context)
         adapter.renewItems(images)
         imageSlider.setSliderAdapter(adapter)
         imageSlider.isAutoCycle = true
+        imageSlider.setIndicatorAnimation(IndicatorAnimationType.THIN_WORM)
+        imageSlider.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION)
+        imageSlider.autoCycleDirection = SliderView.AUTO_CYCLE_DIRECTION_RIGHT
         imageSlider.startAutoCycle()
     }
 

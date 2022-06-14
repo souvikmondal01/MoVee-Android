@@ -7,10 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import android.widget.Toast.makeText as makeText
 
 class MovieAdapterMoreDetails(
     private val context: Context,
@@ -49,8 +47,6 @@ class MovieAdapterMoreDetails(
             intent.putExtra("movie_overview", movieMore.overview)
             context.startActivity(intent)
         }
-
-
     }
 
     override fun getItemCount(): Int {
