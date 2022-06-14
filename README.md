@@ -11,7 +11,16 @@
 * [Android-Image-Slider] - An amazing image slider for the Android.
 * [ReadMoreTextView] - A Custom TextView with trim text.
 ## App Icon 📱
-<img src="images/logo.png" width="80px"/>
+<img src="images/logo.png" width="80px" hspace="40">
+
+## Screenshots
+<img src="images/ss1.jpg" height="400" width="200" hspace="40"><img src="images/ss2.jpg" height="400" width="200" hspace="40">
+
+<img src="images/ss3.jpg" height="400" width="200" hspace="40"><img src="images/ss4.jpg" height="400" width="200" hspace="40">
+
+## Demonstration
+
+<img src="images/gif.gif" height="400" width="200" hspace="40">
 
 
 
