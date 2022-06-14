@@ -10,7 +10,8 @@
 * [Material Components for Android] - Modular and customizable Material Design UI components for Android.
 * [Android-Image-Slider] - An amazing image slider for the Android.
 * [ReadMoreTextView] - A Custom TextView with trim text.
-
+## App Icon 📱
+<img src="images/logo.png" width="80px"/>
 
 
 
