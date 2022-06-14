@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/drawable/ic_arrow_more.xml" value="0.19166666666666668" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/drawable/slider_view_background.xml" value="0.19583333333333333" />
-        <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout-land/activity_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_more_details.xml" value="0.16666666666666666" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_more_popular.xml" value="0.1796875" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_more_top_rated.xml" value="0.1796875" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_single_movie_details.xml" value="0.18536853685368537" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/activity_splash_screen.xml" value="0.16666666666666666" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/image_holder.xml" value="0.14666666666666667" />
-        <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/more_movie_list.xml" value="0.6" />
+        <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/more_movie_list.xml" value="0.16666666666666666" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/layout/movie_list.xml" value="0.14666666666666667" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19166666666666668" />
         <entry key="..\:/Downloads/MovieList2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19166666666666668" />

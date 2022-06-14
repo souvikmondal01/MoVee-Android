@@ -46,7 +46,7 @@
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/imageSlider"
                     android:layout_width="0dp"
-                    android:layout_height="180dp"
+                    android:layout_height="300dp"
                     android:layout_margin="8dp"
                     android:padding="8dp"
                     app:layout_constraintBottom_toTopOf="@id/cl_trending_movies"
@@ -55,8 +55,8 @@
                     app:layout_constraintTop_toBottomOf="@id/frame_layout"
                     app:sliderIndicatorGravity="center_horizontal|bottom"
                     app:sliderIndicatorOrientation="horizontal"
-                    app:sliderIndicatorPadding="2.4dp"
-                    app:sliderIndicatorRadius="1.2dp"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="1.8dp"
                     app:sliderIndicatorSelectedColor="@color/white"
                     app:sliderIndicatorUnselectedColor="#5A5A5A"
                     app:sliderScrollTimeInSec="2" />
